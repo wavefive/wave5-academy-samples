@@ -1,1 +1,1 @@
-# wave5-academy-samples
+# Wave5 Academy Samples
