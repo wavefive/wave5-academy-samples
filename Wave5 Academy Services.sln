@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Builds", "00 Builds", "{077DF22A-0D2D-4D4A-BCF6-208FDE688627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Code", "04 Code", "{5248F5B8-8BC6-436E-A8DF-F0B50DA5EE8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.Models", "04 Code\Wave5.AcademyServices.Models\Wave5.AcademyServices.Models.csproj", "{10EE017F-3842-4EBD-A4EB-E290B0BD6C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.CoreProviders", "04 Code\Wave5.AcademyServices.CoreProviders\Wave5.AcademyServices.CoreProviders.csproj", "{EE7FF857-5258-40FA-B252-772FFF22EE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.LogicProviders", "04 Code\Wave5.AcademyServices.LogicProviders\Wave5.AcademyServices.LogicProviders.csproj", "{4239A7A0-174D-4787-9643-A982519D6740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.SqlServerDataProvider", "04 Code\Wave5.AcademyServices.SqlServerDataProvider\Wave5.AcademyServices.SqlServerDataProvider.csproj", "{CE4E72C3-47C2-4B40-8756-4EBC833C0029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.MockDataProviders", "04 Code\Wave5.AcademyServices.MockDataProviders\Wave5.AcademyServices.MockDataProviders.csproj", "{5427BF95-78CD-4583-8714-9A112CC7DB31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Docs", "01 Docs", "{FE9CD3B0-6E4B-40A4-BD78-0E8A38646371}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Libs", "02 Libs", "{B0C51BD0-9BDA-4088-A56F-13660FC17766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Databases", "03 Databases", "{913CB4FD-1740-46A4-8B4D-C6F0F7804C23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Hosts", "05 Hosts", "{44A5D205-EC5E-48F2-AF20-F9990BCFC3FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Apps", "06 Apps", "{25F4AE11-B6A2-462F-A10C-ABA8CBD43AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.ConsoleApp", "06 Apps\Wave5.AcademyServices.ConsoleApp\Wave5.AcademyServices.ConsoleApp.csproj", "{627B151A-9EEB-4F1A-BD53-A13872A71B42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10EE017F-3842-4EBD-A4EB-E290B0BD6C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EE017F-3842-4EBD-A4EB-E290B0BD6C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EE017F-3842-4EBD-A4EB-E290B0BD6C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EE017F-3842-4EBD-A4EB-E290B0BD6C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7FF857-5258-40FA-B252-772FFF22EE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7FF857-5258-40FA-B252-772FFF22EE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7FF857-5258-40FA-B252-772FFF22EE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7FF857-5258-40FA-B252-772FFF22EE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4239A7A0-174D-4787-9643-A982519D6740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4239A7A0-174D-4787-9643-A982519D6740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4239A7A0-174D-4787-9643-A982519D6740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4239A7A0-174D-4787-9643-A982519D6740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE4E72C3-47C2-4B40-8756-4EBC833C0029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4E72C3-47C2-4B40-8756-4EBC833C0029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4E72C3-47C2-4B40-8756-4EBC833C0029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4E72C3-47C2-4B40-8756-4EBC833C0029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5427BF95-78CD-4583-8714-9A112CC7DB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5427BF95-78CD-4583-8714-9A112CC7DB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5427BF95-78CD-4583-8714-9A112CC7DB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5427BF95-78CD-4583-8714-9A112CC7DB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627B151A-9EEB-4F1A-BD53-A13872A71B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627B151A-9EEB-4F1A-BD53-A13872A71B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627B151A-9EEB-4F1A-BD53-A13872A71B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627B151A-9EEB-4F1A-BD53-A13872A71B42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10EE017F-3842-4EBD-A4EB-E290B0BD6C80} = {5248F5B8-8BC6-436E-A8DF-F0B50DA5EE8D}
+		{EE7FF857-5258-40FA-B252-772FFF22EE17} = {5248F5B8-8BC6-436E-A8DF-F0B50DA5EE8D}
+		{4239A7A0-174D-4787-9643-A982519D6740} = {5248F5B8-8BC6-436E-A8DF-F0B50DA5EE8D}
+		{CE4E72C3-47C2-4B40-8756-4EBC833C0029} = {5248F5B8-8BC6-436E-A8DF-F0B50DA5EE8D}
+		{5427BF95-78CD-4583-8714-9A112CC7DB31} = {5248F5B8-8BC6-436E-A8DF-F0B50DA5EE8D}
+		{627B151A-9EEB-4F1A-BD53-A13872A71B42} = {25F4AE11-B6A2-462F-A10C-ABA8CBD43AD9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12E48BDD-542D-4A1C-9444-FF8E8E747283}
+	EndGlobalSection
+EndGlobal
