@@ -9,15 +9,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Code", "04 Code", "{5248
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.Models", "04 Code\Wave5.AcademyServices.Models\Wave5.AcademyServices.Models.csproj", "{10EE017F-3842-4EBD-A4EB-E290B0BD6C80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.CoreProviders", "04 Code\Wave5.AcademyServices.CoreProviders\Wave5.AcademyServices.CoreProviders.csproj", "{EE7FF857-5258-40FA-B252-772FFF22EE17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.CoreProviders", "04 Code\Wave5.AcademyServices.CoreProviders\Wave5.AcademyServices.CoreProviders.csproj", "{EE7FF857-5258-40FA-B252-772FFF22EE17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.LogicProviders", "04 Code\Wave5.AcademyServices.LogicProviders\Wave5.AcademyServices.LogicProviders.csproj", "{4239A7A0-174D-4787-9643-A982519D6740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.LogicProviders", "04 Code\Wave5.AcademyServices.LogicProviders\Wave5.AcademyServices.LogicProviders.csproj", "{4239A7A0-174D-4787-9643-A982519D6740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.SqlServerDataProvider", "04 Code\Wave5.AcademyServices.SqlServerDataProvider\Wave5.AcademyServices.SqlServerDataProvider.csproj", "{CE4E72C3-47C2-4B40-8756-4EBC833C0029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.SqlServerDataProvider", "04 Code\Wave5.AcademyServices.SqlServerDataProvider\Wave5.AcademyServices.SqlServerDataProvider.csproj", "{CE4E72C3-47C2-4B40-8756-4EBC833C0029}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.MockDataProviders", "04 Code\Wave5.AcademyServices.MockDataProviders\Wave5.AcademyServices.MockDataProviders.csproj", "{5427BF95-78CD-4583-8714-9A112CC7DB31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.MockDataProviders", "04 Code\Wave5.AcademyServices.MockDataProviders\Wave5.AcademyServices.MockDataProviders.csproj", "{5427BF95-78CD-4583-8714-9A112CC7DB31}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Docs", "01 Docs", "{FE9CD3B0-6E4B-40A4-BD78-0E8A38646371}"
+	ProjectSection(SolutionItems) = preProject
+		01 docs\Wave5 Academy Samples Solution.txt = 01 docs\Wave5 Academy Samples Solution.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Libs", "02 Libs", "{B0C51BD0-9BDA-4088-A56F-13660FC17766}"
 EndProject
@@ -27,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Hosts", "05 Hosts", "{44
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Apps", "06 Apps", "{25F4AE11-B6A2-462F-A10C-ABA8CBD43AD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave5.AcademyServices.ConsoleApp", "06 Apps\Wave5.AcademyServices.ConsoleApp\Wave5.AcademyServices.ConsoleApp.csproj", "{627B151A-9EEB-4F1A-BD53-A13872A71B42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wave5.AcademyServices.ConsoleApp", "06 Apps\Wave5.AcademyServices.ConsoleApp\Wave5.AcademyServices.ConsoleApp.csproj", "{627B151A-9EEB-4F1A-BD53-A13872A71B42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

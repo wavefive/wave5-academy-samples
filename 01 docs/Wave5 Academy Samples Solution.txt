@@ -52,6 +52,7 @@ Methods
 	 Create () => Student 	 
 	 Create (string firstName, string lastName) => Student 	 
 
+
 =======================================================
 Extentions
 =======================================================
@@ -171,6 +172,8 @@ Namespace: 	 Wave5.AcademyServices.Data
 Class Overview
 	Extensions
 		ServiceExtensions
+	Seeds
+		SeedProvider
 	Providers
 		StudentDataProvider
 
@@ -209,6 +212,9 @@ Project: 	 Wave5.AcademyServices.SqlServerDataProviders
 Namespace: 	 Wave5.AcademyServices.Data
 =======================================================
 Class Overview
+	Context
+		Wave5AcademyServices
+		Wave5AcademyServices.Models
 	Extensions
 		ServiceExtensions
 	Providers
@@ -234,13 +240,9 @@ Providers
 -------------------------------------------------------
 StudentDataProvider
 -------------------------------------------------------
-Summary: 	 This is the data provider for Student. The data provider is responsible for accessing the entity's data source.
+Summary: 	 This is the sql server data provider for Student. The data provider is responsible for accessing the entity's in sql server.
 Namespace: 	 Wave5.AcademyServices.Data
-Inherits: 	 RCode.Data.Providers.EntityDataProvider<Student>
+Inherits: 	 RCode.Data.Providers.BaseEntitySqlServerDataProvider<Student, Wave5AcademyServicesDbContext>
 Implements: 	 IStudentDataProvider
-Methods
-	 GetByFilterAsync (StudentFilterOptions options) => Task<List<Student>>  	 
-	 GetByFirstNameAsync (string firstName) => Task<List<Student>> 	 
-	 GetByLastNameAsync (string lastName) => Task<List<Student>> 	 
 
 
