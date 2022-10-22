@@ -1,0 +1,246 @@
+-------------------------------------------------------
+Solution: Wave5 Academy Samples Solution
+-------------------------------------------------------
+
+=======================================================
+Visual Studio Projects
+=======================================================
+
+Wave5.AcademyServices.Models
+Wave5.AcademyServices.CoreProvider
+Wave5.AcademyServices.LogicProvider
+Wave5.AcademyServices.MockDataProviders
+Wave5.AcademyServices.SqlServerDataProviders
+
+=======================================================
+Project: 	 Wave5.AcademyServices.Models
+Namespace: 	 Wave5.AcademyServices.Models
+=======================================================
+Class Overview
+	Entities
+		Student
+	Factories
+		StudentFactory
+	Extensions
+		StudentExtensions
+	Filters
+		StudentFilterOptions
+
+=======================================================
+Entities
+=======================================================
+
+-------------------------------------------------------
+Student
+-------------------------------------------------------
+Summary: 	 Represents the a Student.
+Namespace: 	 Wave5.AcademyServices.Models
+Inherits: 	 RCode.Models.BaseEntity
+Properties:
+	FirstName [string]  The first name of the student.
+	LastName [string]  The last name of the student.
+
+
+=======================================================
+Factories
+=======================================================
+
+-------------------------------------------------------
+StudentFactory
+-------------------------------------------------------
+Methods
+	 Create () => Student 	 
+	 Create (string firstName, string lastName) => Student 	 
+
+=======================================================
+Extentions
+=======================================================
+
+-------------------------------------------------------
+StudentExtensions
+-------------------------------------------------------
+Namespace: 	 Wave5.AcademyServices.Models
+Methods
+	 GetDisplayName (this Student student) => string 	 
+	 Add (this List<Student> items, string firstName, string lastName) => void 	 
+
+
+=======================================================
+Filters
+=======================================================
+
+-------------------------------------------------------
+StudentFilterOptions
+-------------------------------------------------------
+Properties:
+	FirstName	[string]  
+	LastName	[string]  
+
+
+=======================================================
+Project: 	 Wave5.AcademyServices.CoreProvider
+Namespace: 	 Wave5.AcademyServices
+=======================================================
+Class Overview
+	 Providers
+		 Core
+			IStudentProvider
+		 Logic
+			IStudentLogicProvider
+		 Data
+			IStudentDataProvider
+
+=======================================================
+Providers - Core
+=======================================================
+
+-------------------------------------------------------
+IStudentProvider
+-------------------------------------------------------
+Summary: 	 This is the ore provider interface for Student. The interface used on entity providers.
+Namespace: 	 Wave5.AcademyServices
+Implements: 	 IEntityProvider<Student>
+Methods
+	 GetByFilterAsync (StudentFilterOptions options) => Task<List<Student>>  	 
+	 GetByFirstNameAsync (string firstName) => Task<List<Student>> 	 
+	 GetByLastNameAsync (string lastName) => Task<List<Student>> 	 
+
+=======================================================
+Providers - Logic
+=======================================================
+
+-------------------------------------------------------
+IStudentLogicProvider
+-------------------------------------------------------
+Summary: 	 This is the logic provider interface for Student. The interface used on entity logic providers.
+Namespace: 	 Wave5.AcademyServices
+Inherits: 	 RCode.IEntityLogicProvider<Student>
+Implements: 	 IStudentProvider
+Methods
+	 GetByFilterAsync (StudentFilterOptions options) => Task<List<Student>>  	 
+	 GetByFirstNameAsync (string firstName) => Task<List<Student>> 	 
+	 GetByLastNameAsync (string lastName) => Task<List<Student>> 	 
+
+=======================================================
+Providers - Data
+=======================================================
+
+-------------------------------------------------------
+IStudentDataProvider
+-------------------------------------------------------
+Summary: 	 This is the data provider interface for Student. The interface used on entity data providers.
+Namespace: 	 Wave5.AcademyServices
+Inherits: 	 RCode.Data.Providers.IEntityDataProvider<Student>
+Implements: 	 IStudentProvider
+Methods
+	 GetByFilterAsync (StudentFilterOptions options) => Task<List<Student>>  	 
+	 GetByFirstNameAsync (string firstName) => Task<List<Student>> 	 
+	 GetByLastNameAsync (string lastName) => Task<List<Student>> 	 
+
+
+=======================================================
+Project: 	 Wave5.AcademyServices.LogicProvider
+Namespace: 	 Wave5.AcademyServices.Logic
+=======================================================
+Class Overview
+	Extensions
+		ServiceExtensions
+
+=======================================================
+Extentions
+=======================================================
+
+-------------------------------------------------------
+ServiceExtensions
+-------------------------------------------------------
+Namespace: 	 Wave5.AcademyServices.Logic
+Methods
+	 AddWave5AcademyServicesLogicProviders (IServiceCollection services) => void 	 
+	 AddWave5AcademyServicesLogicProviders (IServiceCollection services, IConfiguration configuration) => void 	 
+
+
+=======================================================
+Providers
+=======================================================
+
+
+=======================================================
+Project: 	 Wave5.AcademyServices.MockDataProviders
+Namespace: 	 Wave5.AcademyServices.Data
+=======================================================
+Class Overview
+	Extensions
+		ServiceExtensions
+	Providers
+		StudentDataProvider
+
+=======================================================
+Extentions
+=======================================================
+
+-------------------------------------------------------
+ServiceExtensions
+-------------------------------------------------------
+Namespace: 	 Wave5.AcademyServices.Data
+Methods
+	 AddWave5AcademyServicesMockDataProviders (IServiceCollection services, bool usedInWebApp = true) => void 	 
+	 AddWave5AcademyServicesMockDataProviders (IServiceCollection services, IConfiguration configuration, bool usedInWebApp = true) => void 	 
+
+
+=======================================================
+Providers
+=======================================================
+
+-------------------------------------------------------
+StudentDataProvider
+-------------------------------------------------------
+Summary: 	 This is the data provider for Student. The data provider is responsible for accessing the entity's data source.
+Namespace: 	 Wave5.AcademyServices.Data
+Inherits: 	 RCode.Data.Providers.EntityDataProvider<Student>
+Implements: 	 IStudentDataProvider
+Methods
+	 GetByFilterAsync (StudentFilterOptions options) => Task<List<Student>>  	 
+	 GetByFirstNameAsync (string firstName) => Task<List<Student>> 	 
+	 GetByLastNameAsync (string lastName) => Task<List<Student>> 	 
+
+
+=======================================================
+Project: 	 Wave5.AcademyServices.SqlServerDataProviders
+Namespace: 	 Wave5.AcademyServices.Data
+=======================================================
+Class Overview
+	Extensions
+		ServiceExtensions
+	Providers
+		StudentDataProvider
+
+=======================================================
+Extentions
+=======================================================
+
+-------------------------------------------------------
+ServiceExtensions
+-------------------------------------------------------
+Namespace: 	 Wave5.AcademyServices.Data
+Methods
+	 AddWave5AcademyServicesSqlServerDataProviders (IServiceCollection services, bool usedInWebApp = true) => void 	 
+	 AddWave5AcademyServicesSqlServerDataProviders (IServiceCollection services, IConfiguration configuration, bool usedInWebApp = true) => void 	 
+
+
+=======================================================
+Providers
+=======================================================
+
+-------------------------------------------------------
+StudentDataProvider
+-------------------------------------------------------
+Summary: 	 This is the data provider for Student. The data provider is responsible for accessing the entity's data source.
+Namespace: 	 Wave5.AcademyServices.Data
+Inherits: 	 RCode.Data.Providers.EntityDataProvider<Student>
+Implements: 	 IStudentDataProvider
+Methods
+	 GetByFilterAsync (StudentFilterOptions options) => Task<List<Student>>  	 
+	 GetByFirstNameAsync (string firstName) => Task<List<Student>> 	 
+	 GetByLastNameAsync (string lastName) => Task<List<Student>> 	 
+
+
