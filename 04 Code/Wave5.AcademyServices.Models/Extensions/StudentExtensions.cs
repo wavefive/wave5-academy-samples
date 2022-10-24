@@ -7,7 +7,6 @@ public static class StudentExtensions
 {
     #region [ Public Methods - Name ]
     public static string GetDisplayName(this Student student) {
-        Guard.ParamIsNull(student, nameof(student));
 
         if (!string.IsNullOrEmpty(student.FirstName) && !string.IsNullOrEmpty(student.LastName)) {
             return $"{student.FirstName} {student.LastName}";
